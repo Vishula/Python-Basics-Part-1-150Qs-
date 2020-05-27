@@ -82,6 +82,7 @@ vish = 1
 
 vish = 2
 
+
 # val = input("(E)nter numbers: ")
 # list = val.split(",")
 # tuple = tuple(list)
@@ -274,7 +275,63 @@ vish = 2
 
 # ---------------------------------------------------------------------------
 
-a = input("enter a number: ")
-while a.isdigit():
-    print()
-    print(a)
+# def string_prints(line, num):
+#     res = ''
+#
+#     for i in range(num):
+#     gdfxc v    res = res + line
+#     return res
+#
+# print(string_prints("coke", 2))
+#  'abc' * num = 'abcabcabc'
+# def convo(line, num):
+#    emptystring = ""
+
+
+# print("-" * 50)
+# Q 20- 23 check again later
+# ---------------------------------------------------------------------------
+# Q 24
+
+# Check whether passed letter is a vowel or not
+
+# def isvowel(c):
+#     vowels = 'aeiou'
+#     return c in vowels
+#
+#
+# print(isvowel("e"))
+# print(isvowel("z"))
+
+# ---------------------------------------------------------------------------
+# Q 25
+
+# check if specified val is contained in groups of values
+# 3 -> [3,4,5] -> T
+# 3 -> [4,1,9] -> F
+
+# def iscontained(values, x):
+#     if x in values:
+#         return True
+#     else:
+#         return False
+#
+#
+# print(iscontained([2, 5, 3, 4], 3))
+# print(iscontained([1, 2, 4, 19],19))
+
+# ---------------------------------------------------------------------------
+# Q 26
+
+# create a histrogram from a given list of integers
+
+def histogram(items):
+    for n in items:
+        output = ''
+        times = n
+        while(times > 0):
+          output += 'x'
+          times = times -1
+        print(output)
+
+histogram([2, 3, 6, 5])
